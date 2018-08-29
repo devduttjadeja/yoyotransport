@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Built-By: devdutt.jadeja
+Build-Jdk: 9.0.4
+Implementation-Title: yoyotransport
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: com.example
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/yoyotransport
+Main-Class: com.example.demo.YoyotransportApplication
+Created-By: Maven Integration for Eclipse
+
