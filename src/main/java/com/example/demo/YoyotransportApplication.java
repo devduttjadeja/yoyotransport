@@ -12,7 +12,7 @@ import org.springframework.context.annotation.ComponentScan;
 import com.example.mykong.HelloMessageService;
 
 @SpringBootApplication
-@ComponentScan(basePackages = "com.example") // this will initialise all the beans in com.example eg HelloMessageService
+@ComponentScan(basePackages = "com.example") // this will initialise all the beans in com.example package eg HelloMessageService
 public class YoyotransportApplication implements CommandLineRunner {
 
 	@Autowired
