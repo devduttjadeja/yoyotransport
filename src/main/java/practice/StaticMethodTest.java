@@ -19,6 +19,9 @@ public class StaticMethodTest {
 		SuperClass obj = new SubClass();
 		obj.method(); // superClass method : because when method is static it depends on type of reference
 						// not type of object
+		
+		SuperClass.method();
+		SubClass.method();
 	}
 
 }
