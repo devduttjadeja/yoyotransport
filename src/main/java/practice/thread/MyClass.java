@@ -7,11 +7,11 @@ public class MyClass {
 
 		/*---------------------  Runnable  Example      ----------------------------------*/
 
-		MyRunnable myRunnable1 = new MyRunnable();
-		MyRunnable myRunnable2 = new MyRunnable();
+		MyRunnable myRunnable1 = new MyRunnable(); // practice.thread.MyRunnable@3712b94
+		MyRunnable myRunnable2 = new MyRunnable(); // practice.thread.MyRunnable@2833cc4
 
-		Thread thread1 = new Thread(myRunnable1, "Thread-1");
-		Thread thread2 = new Thread(myRunnable1, "Thread-2");
+		Thread thread1 = new Thread(myRunnable1, "Thread-1"); // thread1 is on object myRunnable1
+		Thread thread2 = new Thread(myRunnable2, "Thread-2"); // thread2 is on object myRunnable2
 
 		/*
 		 * here when Thread-1 is in static synchronized method1() it must be holding
@@ -24,7 +24,7 @@ public class MyClass {
 		Thread.sleep(1000);// Just to ensure Thread-1 starts before Thread-2
 		thread2.start();
 
-		Thread currentThread = thread2.currentThread();
+		Thread currentThread = Thread.currentThread();
 		System.out.println(currentThread); // Thread[main,5,main]
 
 		/*---------------------  Thread  Example      ----------------------------------*/

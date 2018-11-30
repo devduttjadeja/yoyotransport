@@ -10,7 +10,7 @@ public class MyRunnable implements Runnable {
 			method2();
 	}
 
-	synchronized void method1() { /* SYNCHRONIZED methods acquires OBJECT LEVEL LOCK*/
+	static synchronized void method1() { /* SYNCHRONIZED methods acquires OBJECT LEVEL LOCK*/
 		System.out.println(Thread.currentThread().getName() + " in static synchronized void method1() started");
 		try {
 			Thread.sleep(2000);
