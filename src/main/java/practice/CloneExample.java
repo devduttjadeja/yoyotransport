@@ -14,10 +14,10 @@ public class CloneExample implements Cloneable {
            this.map=map;
     }
     
-    /*
-     * override clone method for doing shallow copy.
-     */
-       @Override
+   /*
+    * override clone method for doing shallow copy.
+    */
+    @Override
     public Object clone() {
            System.out.println("Doing shallow copy");
            try {

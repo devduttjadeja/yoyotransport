@@ -11,7 +11,7 @@ class Student implements Serializable {
     
     private static final long serialVersionUID = 1L;
     private Integer id;
-    private MyClass myClass ;
+    private MyClass myClass;
     
     public Student(Integer id) {
            this.id = id;

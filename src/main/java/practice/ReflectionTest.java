@@ -36,10 +36,10 @@ public class ReflectionTest {
 	public static void main(String... a) throws ClassNotFoundException, InstantiationException, IllegalAccessException,
 			NoSuchMethodException, SecurityException, IllegalArgumentException, InvocationTargetException {
 
-		// step 1, load 'ReflectionClass' at runtime
+		// step 1, class is loaded load 'ReflectionClass' at runtime
 		Class cls = Class.forName("practice.ReflectionClass"); /** here if we make mistake in package name or class name we will get ClassNotFoundException */
 		
-		// step 2 //will call constructor of ReflectionClass
+		// step 2, instance is CREATED so it will call constructor of ReflectionClass
 		Object object = cls.newInstance();
 
 		// step 3, calling methodNoPara()
