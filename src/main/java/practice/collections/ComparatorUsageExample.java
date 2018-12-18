@@ -3,8 +3,9 @@ package practice.collections;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.List;
  
-class Employee implements Comparator<Employee>/*,Comparable<Employee>*/{
+class Employee implements Comparator<Employee>,Comparable<Employee>{
     String name;
     String id;
    
@@ -21,10 +22,11 @@ class Employee implements Comparator<Employee>/*,Comparable<Employee>*/{
        return obj1.name.compareTo(obj2.name);
     }
    
-	/*@Override
+	@Override
 	public int compareTo(Employee o) {
-		return this.name.compareTo(o.name);
-	}*/
+		//sort Employee on basis of id (ascending order)
+		return this.id.compareTo(o.id);
+	}
    
 	
 	@Override
@@ -56,6 +58,18 @@ public class ComparatorUsageExample {
  
         Collections.sort(list ,new Employee());
  
+        Collections.sort(list); // to use this list must be "Comparable" else compile time error
+        
+        // using anonymus inner class
+        Collections.sort(list, new Comparator<Employee>() {
+
+			@Override
+			public int compare(Employee o1, Employee o2) {
+				return 0;
+			}
+		});
+        
+        
         System.out.println("\nlist after sorting on basis of name(ascending order) : \n"+list);
        
     }
