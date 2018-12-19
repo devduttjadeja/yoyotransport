@@ -46,8 +46,8 @@ public class ExecutorServiceExample {
            System.out.println("2 threads in executor will be used for executing 10 tasks. "
                         + "So, at a time only 2 tasks will be executed");
            for (int i = 1; i <= nTasks; i++) {
-                  Runnable task = new MyRunnable(i);
-                  executor.execute(task);
+                  Runnable myrunnable = new MyRunnable(i);
+                  executor.execute(myrunnable);
            }
  
            /*
