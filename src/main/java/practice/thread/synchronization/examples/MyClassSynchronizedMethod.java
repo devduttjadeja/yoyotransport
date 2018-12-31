@@ -15,9 +15,15 @@ class MyRunnable1 implements Runnable {
     	
            for(int i=0;i<5;i++){
                   System.out.println(i+" "+Thread.currentThread().getName()+" is executing");
-                  try {
-                        Thread.sleep(500);
-                  } catch (InterruptedException e) {e.printStackTrace(); }
+                 
+                  synchronized(this) { // YES we can have synchronized block in synchronized method()
+                	  
+                	  try {
+                          Thread.sleep(500);
+                    } catch (InterruptedException e) {e.printStackTrace(); }
+                	  
+                  }
+                  
            }
            
     }
