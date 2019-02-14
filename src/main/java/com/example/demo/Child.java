@@ -7,12 +7,4 @@ import org.springframework.stereotype.Component;
 @Scope("prototype")
 public class Child extends Parent {
 
-
-	
-	
-	
-	
-
-
-
 }

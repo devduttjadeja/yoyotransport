@@ -21,7 +21,9 @@ public class Final_List_Example {
 		arrayList.add("8");
 		arrayList.add("9");
 		arrayList.add("10");
-		arrayList.add("11");
+		arrayList.add("11"); // when we will insert the 11th element new List Object is created , but we donot get the error although the List is "final"
+		
+		
 		
 		System.out.println(arrayList.size());
 	}
