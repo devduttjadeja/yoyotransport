@@ -25,11 +25,11 @@ public class SetSizeExample {
 		// add other type values to set
 		
 		hs.add(1);
-		hs.add(new Employee());
-		hs.add(new Employee());
-		hs.add(new Employee());
+		hs.add(new Employee()); // all the new Employee() is treated as same object
+		hs.add(new Employee()); // because equals() & hashcode() are overriden in Employee class 
+		hs.add(new Employee()); //
 		
-		System.out.println(hs.size()); // size = 4 because all new Employee() are treated as same objects
+		System.out.println(hs.size()); // total size of hs = 4 because all new Employee() are treated as same objects
 		
 	}
 	
